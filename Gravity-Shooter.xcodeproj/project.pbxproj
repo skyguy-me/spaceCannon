@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4142C2E31BAD848F00E50DA1 /* CCAppDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 419CA38D1A2BF51D0057DF84 /* CCAppDelegate.h */; };
+		4142C2E41BAD848F00E50DA1 /* CCViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 57FA966C18A8EEFF006ED483 /* CCViewController.h */; };
+		4142C2E51BAD848F00E50DA1 /* CCMyScene.h in Sources */ = {isa = PBXBuildFile; fileRef = 57FA966F18A8EEFF006ED483 /* CCMyScene.h */; };
+		4142C2E61BAD848F00E50DA1 /* CCMenu.h in Sources */ = {isa = PBXBuildFile; fileRef = 57AF9AD418CF7B1A00717742 /* CCMenu.h */; };
+		4142C2E71BAD848F00E50DA1 /* CCBall.h in Sources */ = {isa = PBXBuildFile; fileRef = 5720533F18D310A9002EA2DD /* CCBall.h */; };
+		4166FFF01A26171B00E5D04F /* space-tours-to-mars.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 4166FFEF1A26171B00E5D04F /* space-tours-to-mars.m4a */; };
+		4166FFF31A261B1A00E5D04F /* Space_Adventure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4166FFF11A261B1A00E5D04F /* Space_Adventure.mp3 */; };
+		4166FFF41A261B1A00E5D04F /* Moon_Landings.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4166FFF21A261B1A00E5D04F /* Moon_Landings.mp3 */; };
+		419CA38F1A2BF51D0057DF84 /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 419CA38E1A2BF51D0057DF84 /* CCAppDelegate.m */; };
+		41B96EEF19E2AB8D00C69BD3 /* References and Acknoledgements.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 41B96EEE19E2AB8D00C69BD3 /* References and Acknoledgements.rtf */; };
+		41C64CA719E192A300FB53BD /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41C64CA519E192A300FB53BD /* iAd.framework */; };
+		41D3DEC01BAD95AB009380C6 /* constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D3DEBF1BAD95AB009380C6 /* constants.m */; };
+		41E046871A2B1FA8003B50C7 /* MyParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 41E046861A2B1FA8003B50C7 /* MyParticle.sks */; };
+		571F75A818D3064E00E72683 /* BallTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 571F75A718D3064E00E72683 /* BallTrail.sks */; };
+		5720534118D310A9002EA2DD /* CCBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 5720534018D310A9002EA2DD /* CCBall.m */; };
+		5720535018D6F170002EA2DD /* ShieldUp.caf in Resources */ = {isa = PBXBuildFile; fileRef = 5720534F18D47B86002EA2DD /* ShieldUp.caf */; };
+		5742FD8818C62E6200F963DE /* LifeBarExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5742FD8718C62E6200F963DE /* LifeBarExplosion.sks */; };
+		576E66EC18DA41E90037A404 /* ObservingTheStar.caf in Resources */ = {isa = PBXBuildFile; fileRef = 576E66EB18DA41E90037A404 /* ObservingTheStar.caf */; };
+		5780EB1A18C4D5E700B993B2 /* HaloExplosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5780EB1818C4D5E700B993B2 /* HaloExplosion.sks */; };
+		5780EB1B18C4D5E700B993B2 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 5780EB1918C4D5E700B993B2 /* spark.png */; };
+		57AF9AA818CE158E00717742 /* Bounce.caf in Resources */ = {isa = PBXBuildFile; fileRef = 57AF9AA318CE158E00717742 /* Bounce.caf */; };
+		57AF9AA918CE158E00717742 /* DeepExplosion.caf in Resources */ = {isa = PBXBuildFile; fileRef = 57AF9AA418CE158E00717742 /* DeepExplosion.caf */; };
+		57AF9AAA18CE158E00717742 /* Explosion.caf in Resources */ = {isa = PBXBuildFile; fileRef = 57AF9AA518CE158E00717742 /* Explosion.caf */; };
+		57AF9AAB18CE158E00717742 /* Laser.caf in Resources */ = {isa = PBXBuildFile; fileRef = 57AF9AA618CE158E00717742 /* Laser.caf */; };
+		57AF9AAC18CE158E00717742 /* Zap.caf in Resources */ = {isa = PBXBuildFile; fileRef = 57AF9AA718CE158E00717742 /* Zap.caf */; };
+		57AF9AD618CF7B1A00717742 /* CCMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 57AF9AD518CF7B1A00717742 /* CCMenu.m */; };
+		57FA965618A8EEFE006ED483 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FA965518A8EEFE006ED483 /* Foundation.framework */; };
+		57FA965818A8EEFE006ED483 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FA965718A8EEFE006ED483 /* CoreGraphics.framework */; };
+		57FA965A18A8EEFF006ED483 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FA965918A8EEFF006ED483 /* UIKit.framework */; };
+		57FA965C18A8EEFF006ED483 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FA965B18A8EEFF006ED483 /* SpriteKit.framework */; };
+		57FA966218A8EEFF006ED483 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57FA966018A8EEFF006ED483 /* InfoPlist.strings */; };
+		57FA966418A8EEFF006ED483 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FA966318A8EEFF006ED483 /* main.m */; };
+		57FA966B18A8EEFF006ED483 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FA966918A8EEFF006ED483 /* Main.storyboard */; };
+		57FA966E18A8EEFF006ED483 /* CCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FA966D18A8EEFF006ED483 /* CCViewController.m */; };
+		57FA967118A8EEFF006ED483 /* CCMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FA967018A8EEFF006ED483 /* CCMyScene.m */; };
+		57FA967518A8EEFF006ED483 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57FA967418A8EEFF006ED483 /* Images.xcassets */; };
+		57FA967C18A8EEFF006ED483 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FA967B18A8EEFF006ED483 /* XCTest.framework */; };
+		57FA967D18A8EEFF006ED483 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FA965518A8EEFE006ED483 /* Foundation.framework */; };
+		57FA967E18A8EEFF006ED483 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FA965918A8EEFF006ED483 /* UIKit.framework */; };
+		57FA968618A8EEFF006ED483 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57FA968418A8EEFF006ED483 /* InfoPlist.strings */; };
+		57FA968818A8EEFF006ED483 /* Space_CannonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FA968718A8EEFF006ED483 /* Space_CannonTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57FA967F18A8EEFF006ED483 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57FA964A18A8EEFE006ED483 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57FA965118A8EEFE006ED483;
+			remoteInfo = "Space Cannon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		410267AB1A613E0D00978942 /* Space Cannon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Space Cannon.entitlements"; path = "Space Cannon/Space Cannon.entitlements"; sourceTree = "<group>"; };
+		4166FFEF1A26171B00E5D04F /* space-tours-to-mars.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "space-tours-to-mars.m4a"; sourceTree = "<group>"; };
+		4166FFF11A261B1A00E5D04F /* Space_Adventure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Space_Adventure.mp3; sourceTree = "<group>"; };
+		4166FFF21A261B1A00E5D04F /* Moon_Landings.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Moon_Landings.mp3; sourceTree = "<group>"; };
+		419CA38D1A2BF51D0057DF84 /* CCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCAppDelegate.h; sourceTree = "<group>"; };
+		419CA38E1A2BF51D0057DF84 /* CCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
+		419FDD261A0DBD7600E56B73 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		41B96EEE19E2AB8D00C69BD3 /* References and Acknoledgements.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; name = "References and Acknoledgements.rtf"; path = "../References and Acknoledgements.rtf"; sourceTree = "<group>"; };
+		41C64CA419E192A300FB53BD /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		41C64CA519E192A300FB53BD /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		41D3DEBE1BAD95AB009380C6 /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		41D3DEBF1BAD95AB009380C6 /* constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = constants.m; sourceTree = "<group>"; };
+		41E046861A2B1FA8003B50C7 /* MyParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MyParticle.sks; sourceTree = "<group>"; };
+		571F75A718D3064E00E72683 /* BallTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BallTrail.sks; sourceTree = "<group>"; };
+		5720533F18D310A9002EA2DD /* CCBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBall.h; sourceTree = "<group>"; };
+		5720534018D310A9002EA2DD /* CCBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBall.m; sourceTree = "<group>"; };
+		5720534F18D47B86002EA2DD /* ShieldUp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ShieldUp.caf; sourceTree = "<group>"; };
+		5742FD8718C62E6200F963DE /* LifeBarExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LifeBarExplosion.sks; sourceTree = "<group>"; };
+		576E66EB18DA41E90037A404 /* ObservingTheStar.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ObservingTheStar.caf; sourceTree = "<group>"; };
+		5780EB1818C4D5E700B993B2 /* HaloExplosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = HaloExplosion.sks; sourceTree = "<group>"; };
+		5780EB1918C4D5E700B993B2 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		57AF9AA318CE158E00717742 /* Bounce.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bounce.caf; sourceTree = "<group>"; };
+		57AF9AA418CE158E00717742 /* DeepExplosion.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DeepExplosion.caf; sourceTree = "<group>"; };
+		57AF9AA518CE158E00717742 /* Explosion.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Explosion.caf; sourceTree = "<group>"; };
+		57AF9AA618CE158E00717742 /* Laser.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Laser.caf; sourceTree = "<group>"; };
+		57AF9AA718CE158E00717742 /* Zap.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zap.caf; sourceTree = "<group>"; };
+		57AF9AD418CF7B1A00717742 /* CCMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCMenu.h; sourceTree = "<group>"; };
+		57AF9AD518CF7B1A00717742 /* CCMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCMenu.m; sourceTree = "<group>"; };
+		57FA965218A8EEFE006ED483 /* Space Cannon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Cannon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FA965518A8EEFE006ED483 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		57FA965718A8EEFE006ED483 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		57FA965918A8EEFF006ED483 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		57FA965B18A8EEFF006ED483 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		57FA965F18A8EEFF006ED483 /* Space Cannon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Space Cannon-Info.plist"; sourceTree = "<group>"; };
+		57FA966118A8EEFF006ED483 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		57FA966318A8EEFF006ED483 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		57FA966518A8EEFF006ED483 /* Space Cannon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Space Cannon-Prefix.pch"; sourceTree = "<group>"; };
+		57FA966A18A8EEFF006ED483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57FA966C18A8EEFF006ED483 /* CCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCViewController.h; sourceTree = "<group>"; };
+		57FA966D18A8EEFF006ED483 /* CCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCViewController.m; sourceTree = "<group>"; };
+		57FA966F18A8EEFF006ED483 /* CCMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCMyScene.h; sourceTree = "<group>"; };
+		57FA967018A8EEFF006ED483 /* CCMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCMyScene.m; sourceTree = "<group>"; };
+		57FA967418A8EEFF006ED483 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		57FA967A18A8EEFF006ED483 /* Space CannonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space CannonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FA967B18A8EEFF006ED483 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		57FA968318A8EEFF006ED483 /* Space CannonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Space CannonTests-Info.plist"; sourceTree = "<group>"; };
+		57FA968518A8EEFF006ED483 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		57FA968718A8EEFF006ED483 /* Space_CannonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Space_CannonTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57FA964F18A8EEFE006ED483 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C64CA719E192A300FB53BD /* iAd.framework in Frameworks */,
+				57FA965818A8EEFE006ED483 /* CoreGraphics.framework in Frameworks */,
+				57FA965A18A8EEFF006ED483 /* UIKit.framework in Frameworks */,
+				57FA965C18A8EEFF006ED483 /* SpriteKit.framework in Frameworks */,
+				57FA965618A8EEFE006ED483 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57FA967718A8EEFF006ED483 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FA967C18A8EEFF006ED483 /* XCTest.framework in Frameworks */,
+				57FA967E18A8EEFF006ED483 /* UIKit.framework in Frameworks */,
+				57FA967D18A8EEFF006ED483 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		576E66EA18DA41E90037A404 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				576E66EB18DA41E90037A404 /* ObservingTheStar.caf */,
+				4166FFF11A261B1A00E5D04F /* Space_Adventure.mp3 */,
+				4166FFF21A261B1A00E5D04F /* Moon_Landings.mp3 */,
+				4166FFEF1A26171B00E5D04F /* space-tours-to-mars.m4a */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		57AF9AA218CE158E00717742 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5720534F18D47B86002EA2DD /* ShieldUp.caf */,
+				57AF9AA318CE158E00717742 /* Bounce.caf */,
+				57AF9AA418CE158E00717742 /* DeepExplosion.caf */,
+				57AF9AA518CE158E00717742 /* Explosion.caf */,
+				57AF9AA618CE158E00717742 /* Laser.caf */,
+				57AF9AA718CE158E00717742 /* Zap.caf */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		57FA964918A8EEFE006ED483 = {
+			isa = PBXGroup;
+			children = (
+				410267AB1A613E0D00978942 /* Space Cannon.entitlements */,
+				57FA965D18A8EEFF006ED483 /* Gravity-Shooter */,
+				57FA968118A8EEFF006ED483 /* Gravity-ShooterTests */,
+				57FA965418A8EEFE006ED483 /* Frameworks */,
+				57FA965318A8EEFE006ED483 /* Products */,
+			);
+			sourceTree = "<group>";
+			usesTabs = 0;
+			wrapsLines = 1;
+		};
+		57FA965318A8EEFE006ED483 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57FA965218A8EEFE006ED483 /* Space Cannon.app */,
+				57FA967A18A8EEFF006ED483 /* Space CannonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57FA965418A8EEFE006ED483 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				419FDD261A0DBD7600E56B73 /* SceneKit.framework */,
+				41C64CA419E192A300FB53BD /* AdSupport.framework */,
+				41C64CA519E192A300FB53BD /* iAd.framework */,
+				57FA965518A8EEFE006ED483 /* Foundation.framework */,
+				57FA965718A8EEFE006ED483 /* CoreGraphics.framework */,
+				57FA965918A8EEFF006ED483 /* UIKit.framework */,
+				57FA965B18A8EEFF006ED483 /* SpriteKit.framework */,
+				57FA967B18A8EEFF006ED483 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57FA965D18A8EEFF006ED483 /* Gravity-Shooter */ = {
+			isa = PBXGroup;
+			children = (
+				576E66EA18DA41E90037A404 /* Music */,
+				57AF9AA218CE158E00717742 /* Sounds */,
+				57FA966918A8EEFF006ED483 /* Main.storyboard */,
+				419CA38D1A2BF51D0057DF84 /* CCAppDelegate.h */,
+				419CA38E1A2BF51D0057DF84 /* CCAppDelegate.m */,
+				57FA966C18A8EEFF006ED483 /* CCViewController.h */,
+				57FA966D18A8EEFF006ED483 /* CCViewController.m */,
+				41D3DEBE1BAD95AB009380C6 /* constants.h */,
+				41D3DEBF1BAD95AB009380C6 /* constants.m */,
+				57FA966F18A8EEFF006ED483 /* CCMyScene.h */,
+				57FA967018A8EEFF006ED483 /* CCMyScene.m */,
+				57FA967418A8EEFF006ED483 /* Images.xcassets */,
+				57FA965E18A8EEFF006ED483 /* Supporting Files */,
+				5780EB1818C4D5E700B993B2 /* HaloExplosion.sks */,
+				5780EB1918C4D5E700B993B2 /* spark.png */,
+				41E046861A2B1FA8003B50C7 /* MyParticle.sks */,
+				5742FD8718C62E6200F963DE /* LifeBarExplosion.sks */,
+				57AF9AD418CF7B1A00717742 /* CCMenu.h */,
+				57AF9AD518CF7B1A00717742 /* CCMenu.m */,
+				571F75A718D3064E00E72683 /* BallTrail.sks */,
+				5720533F18D310A9002EA2DD /* CCBall.h */,
+				5720534018D310A9002EA2DD /* CCBall.m */,
+				41B96EEE19E2AB8D00C69BD3 /* References and Acknoledgements.rtf */,
+			);
+			name = "Gravity-Shooter";
+			path = "Space Cannon";
+			sourceTree = "<group>";
+		};
+		57FA965E18A8EEFF006ED483 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57FA965F18A8EEFF006ED483 /* Space Cannon-Info.plist */,
+				57FA966018A8EEFF006ED483 /* InfoPlist.strings */,
+				57FA966318A8EEFF006ED483 /* main.m */,
+				57FA966518A8EEFF006ED483 /* Space Cannon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57FA968118A8EEFF006ED483 /* Gravity-ShooterTests */ = {
+			isa = PBXGroup;
+			children = (
+				57FA968718A8EEFF006ED483 /* Space_CannonTests.m */,
+				57FA968218A8EEFF006ED483 /* Supporting Files */,
+			);
+			name = "Gravity-ShooterTests";
+			path = "Space CannonTests";
+			sourceTree = "<group>";
+		};
+		57FA968218A8EEFF006ED483 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57FA968318A8EEFF006ED483 /* Space CannonTests-Info.plist */,
+				57FA968418A8EEFF006ED483 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57FA965118A8EEFE006ED483 /* Space Cannon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57FA968B18A8EEFF006ED483 /* Build configuration list for PBXNativeTarget "Space Cannon" */;
+			buildPhases = (
+				57FA964E18A8EEFE006ED483 /* Sources */,
+				57FA964F18A8EEFE006ED483 /* Frameworks */,
+				57FA965018A8EEFE006ED483 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Space Cannon";
+			productName = "Space Cannon";
+			productReference = 57FA965218A8EEFE006ED483 /* Space Cannon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57FA967918A8EEFF006ED483 /* Space CannonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57FA968E18A8EEFF006ED483 /* Build configuration list for PBXNativeTarget "Space CannonTests" */;
+			buildPhases = (
+				57FA967618A8EEFF006ED483 /* Sources */,
+				57FA967718A8EEFF006ED483 /* Frameworks */,
+				57FA967818A8EEFF006ED483 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57FA968018A8EEFF006ED483 /* PBXTargetDependency */,
+			);
+			name = "Space CannonTests";
+			productName = "Space CannonTests";
+			productReference = 57FA967A18A8EEFF006ED483 /* Space CannonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57FA964A18A8EEFE006ED483 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "";
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Sky;
+				TargetAttributes = {
+					57FA965118A8EEFE006ED483 = {
+						DevelopmentTeam = PKCZN8BS58;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+					57FA967918A8EEFF006ED483 = {
+						DevelopmentTeam = PKCZN8BS58;
+						TestTargetID = 57FA965118A8EEFE006ED483;
+					};
+				};
+			};
+			buildConfigurationList = 57FA964D18A8EEFE006ED483 /* Build configuration list for PBXProject "Gravity-Shooter" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57FA964918A8EEFE006ED483;
+			productRefGroup = 57FA965318A8EEFE006ED483 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57FA965118A8EEFE006ED483 /* Space Cannon */,
+				57FA967918A8EEFF006ED483 /* Space CannonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57FA965018A8EEFE006ED483 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5720535018D6F170002EA2DD /* ShieldUp.caf in Resources */,
+				57AF9AA918CE158E00717742 /* DeepExplosion.caf in Resources */,
+				57AF9AAA18CE158E00717742 /* Explosion.caf in Resources */,
+				4166FFF31A261B1A00E5D04F /* Space_Adventure.mp3 in Resources */,
+				5742FD8818C62E6200F963DE /* LifeBarExplosion.sks in Resources */,
+				4166FFF41A261B1A00E5D04F /* Moon_Landings.mp3 in Resources */,
+				41B96EEF19E2AB8D00C69BD3 /* References and Acknoledgements.rtf in Resources */,
+				57FA966218A8EEFF006ED483 /* InfoPlist.strings in Resources */,
+				5780EB1A18C4D5E700B993B2 /* HaloExplosion.sks in Resources */,
+				57AF9AAB18CE158E00717742 /* Laser.caf in Resources */,
+				57FA967518A8EEFF006ED483 /* Images.xcassets in Resources */,
+				57FA966B18A8EEFF006ED483 /* Main.storyboard in Resources */,
+				57AF9AA818CE158E00717742 /* Bounce.caf in Resources */,
+				576E66EC18DA41E90037A404 /* ObservingTheStar.caf in Resources */,
+				57AF9AAC18CE158E00717742 /* Zap.caf in Resources */,
+				571F75A818D3064E00E72683 /* BallTrail.sks in Resources */,
+				5780EB1B18C4D5E700B993B2 /* spark.png in Resources */,
+				4166FFF01A26171B00E5D04F /* space-tours-to-mars.m4a in Resources */,
+				41E046871A2B1FA8003B50C7 /* MyParticle.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57FA967818A8EEFF006ED483 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FA968618A8EEFF006ED483 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57FA964E18A8EEFE006ED483 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4142C2E31BAD848F00E50DA1 /* CCAppDelegate.h in Sources */,
+				4142C2E41BAD848F00E50DA1 /* CCViewController.h in Sources */,
+				4142C2E51BAD848F00E50DA1 /* CCMyScene.h in Sources */,
+				41D3DEC01BAD95AB009380C6 /* constants.m in Sources */,
+				4142C2E61BAD848F00E50DA1 /* CCMenu.h in Sources */,
+				4142C2E71BAD848F00E50DA1 /* CCBall.h in Sources */,
+				57FA967118A8EEFF006ED483 /* CCMyScene.m in Sources */,
+				5720534118D310A9002EA2DD /* CCBall.m in Sources */,
+				57AF9AD618CF7B1A00717742 /* CCMenu.m in Sources */,
+				57FA966418A8EEFF006ED483 /* main.m in Sources */,
+				419CA38F1A2BF51D0057DF84 /* CCAppDelegate.m in Sources */,
+				57FA966E18A8EEFF006ED483 /* CCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57FA967618A8EEFF006ED483 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57FA968818A8EEFF006ED483 /* Space_CannonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57FA968018A8EEFF006ED483 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57FA965118A8EEFE006ED483 /* Space Cannon */;
+			targetProxy = 57FA967F18A8EEFF006ED483 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57FA966018A8EEFF006ED483 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57FA966118A8EEFF006ED483 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		57FA966918A8EEFF006ED483 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57FA966A18A8EEFF006ED483 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		57FA968418A8EEFF006ED483 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57FA968518A8EEFF006ED483 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57FA968918A8EEFF006ED483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iOS Development: Gokul Gokul (CAS8VZ7DUW)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		57FA968A18A8EEFF006ED483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iOS Development: Gokul Gokul (CAS8VZ7DUW)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57FA968C18A8EEFF006ED483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Space",
+					Cannon/Images,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Cannon/Space Cannon-Prefix.pch";
+				INFOPLIST_FILE = "Space Cannon/Space Cannon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sk.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e70b5c8c-e78a-45f1-b76c-5cae4ac7ffe0";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		57FA968D18A8EEFF006ED483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Space",
+					Cannon/Images,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Cannon/Space Cannon-Prefix.pch";
+				INFOPLIST_FILE = "Space Cannon/Space Cannon-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sk.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "e70b5c8c-e78a-45f1-b76c-5cae4ac7ffe0";
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = YES;
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		57FA968F18A8EEFF006ED483 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Cannon/Space Cannon-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Space CannonTests/Space CannonTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codecoaltion.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space Cannon.app/Space Cannon";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		57FA969018A8EEFF006ED483 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Space Cannon/Space Cannon-Prefix.pch";
+				INFOPLIST_FILE = "Space CannonTests/Space CannonTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codecoaltion.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space Cannon.app/Space Cannon";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57FA964D18A8EEFE006ED483 /* Build configuration list for PBXProject "Gravity-Shooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57FA968918A8EEFF006ED483 /* Debug */,
+				57FA968A18A8EEFF006ED483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		57FA968B18A8EEFF006ED483 /* Build configuration list for PBXNativeTarget "Space Cannon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57FA968C18A8EEFF006ED483 /* Debug */,
+				57FA968D18A8EEFF006ED483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		57FA968E18A8EEFF006ED483 /* Build configuration list for PBXNativeTarget "Space CannonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57FA968F18A8EEFF006ED483 /* Debug */,
+				57FA969018A8EEFF006ED483 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57FA964A18A8EEFE006ED483 /* Project object */;
+}
