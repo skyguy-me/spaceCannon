@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="15B17c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LVB-YS-i5n">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+                <viewController id="LVB-YS-i5n" customClass="CCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cmv-I5-hjZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="FOb-vQ-L6q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="dxb-qw-is6">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="q5T-sz-1Gf"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="q5T-sz-1Gf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="q5T-sz-1Gf"/>
+                                    </mask>
+                                </variation>
+                            </adBannerView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dxb-qw-is6" firstAttribute="centerX" secondItem="bdc-N1-crn" secondAttribute="centerX" id="8Yj-7q-e73"/>
+                            <constraint firstItem="dxb-qw-is6" firstAttribute="centerX" secondItem="bdc-N1-crn" secondAttribute="centerX" id="dWW-gW-yXH"/>
+                            <constraint firstItem="dxb-qw-is6" firstAttribute="centerX" secondItem="bdc-N1-crn" secondAttribute="centerX" id="h8Q-It-7Qm"/>
+                            <constraint firstItem="dxb-qw-is6" firstAttribute="top" secondItem="bdc-N1-crn" secondAttribute="top" id="zht-yV-gJf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dxb-qw-is6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8Yj-7q-e73"/>
+                                <exclude reference="dWW-gW-yXH"/>
+                                <exclude reference="h8Q-It-7Qm"/>
+                                <exclude reference="zht-yV-gJf"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="dxb-qw-is6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8Yj-7q-e73"/>
+                                <exclude reference="dWW-gW-yXH"/>
+                                <include reference="h8Q-It-7Qm"/>
+                                <include reference="zht-yV-gJf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="adBanner" destination="dxb-qw-is6" id="pUJ-3q-z0p"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="558" y="347"/>
+        </scene>
+    </scenes>
+</document>
